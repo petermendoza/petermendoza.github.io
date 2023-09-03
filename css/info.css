@@ -36,7 +36,6 @@ p.summary{
 }
 
 .nav-div{
-    padding-bottom: 15vh;
 }
 
 .nav-lines {
@@ -51,12 +50,14 @@ p.summary{
 
 div.icons{
     display: flex;
-    justify-content: space-between;
-    
+    flex-wrap: wrap;
+    position: fixed;
+    bottom:10%;
 }
 
 .icon{
-
+    width: 1.9em;
+    padding-right: 1em;
 }
 @media screen and (max-width:1050px){
     div.summary{
@@ -81,6 +82,16 @@ div.icons{
         padding-bottom:0%;
     }
     .nav-lines{
+        display:none;
+    }
+    div.icons{
+        justify-content: center;
+        position:relative;
+    }
+}
+
+@media screen and (max-height: 592px){
+    div.icons{
         display:none;
     }
 }
