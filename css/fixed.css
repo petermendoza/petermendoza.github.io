@@ -12,7 +12,8 @@ div.main-grid{
     grid-template-columns: 50% 50%;
 }
 
-@media screen and (max-width:600px){
+
+@media screen and (max-width:1050px){
     body{ 
         overflow-y:scroll;
         overflow-x:hidden;
