@@ -1,0 +1,25 @@
+body{
+    overflow: hidden;
+    scroll-behavior:smooth;
+    background-color:#080e1d;
+    font-family: 'Roboto', sans-serif;
+    color: #cdd5f1;
+
+}
+
+div.main-grid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width:600px){
+    body{ 
+        overflow-y:scroll;
+        overflow-x:hidden;
+        scroll-behavior:auto;
+    }
+    div.main-grid{
+        grid-template-columns: auto;
+    }
+}
+
