@@ -1,0 +1,32 @@
+div.content{
+    position: relative;
+}
+
+
+div.about-container{
+    height: 100vh;
+    border: pink solid;
+    position:absolute;
+}
+
+div.about-content{
+    margin-top: 40vh;
+    border: aqua solid;
+}
+
+div.projects-container{
+    height: 100vh;
+    border: aqua solid;
+}
+
+div.projects-content{
+
+}
+div.experience-container{
+    height: 100vh;
+    border: pink solid;
+}
+
+div.experience-content{
+
+}

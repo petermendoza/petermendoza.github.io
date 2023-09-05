@@ -1,4 +1,5 @@
 div.about {
+    position: sticky;
     margin:0;
     height: 99vh;
     float: left;
@@ -6,10 +7,17 @@ div.about {
     border-color: white;
 }
 
+div.main-left{
+    margin: 0;
+    height:99vh;
+    float:right;
+    width:55%;
+    border: blue solid;
+}
+
 div.summary {
-    padding-top: 4vw;
-    float: right;
-    width: 55%;
+    padding-top: 8vh;
+    float: left;
     border: 2px solid;
     border-color: rgb(225, 128, 128);
 }
@@ -36,35 +44,68 @@ p.summary{
 }
 
 .nav-div{
+    border: pink solid;
+    display: inline-block;
+    height: auto;
+}
+
+.nav-div:hover{
+    cursor:pointer;
+}
+
+.nav-div:hover .nav-lines{
+    color:#cdd5f1;
+    transition: color .20s;
 }
 
 .nav-lines {
     font-size: .9em;
     color: #949494;
     font-weight: 700;
-}
-
-.nav-lines:hover {
-    
+    transition: color .20s,
 }
 
 div.icons{
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom:10%;
+    float:left;
+    /* border:white solid; */
+    position:fixed;
+    bottom: 10vh;
 }
 
 .icon{
     width: 1.9em;
     padding-right: 1em;
 }
+
+div.nav-tick{
+    width: 10px;
+    height: 1px;
+    background-color:#949494;
+    border: #949494 solid 1px;
+}
+
 @media screen and (max-width:1050px){
+    div.about{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        float: none;
+    }
+    div.main-left{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        float: none;
+    }
+    p.summary{
+        padding-bottom:0px;
+    }
+
     div.summary{
         width:100%;
         float:none;
         justify-content: center;
-        padding-bottom: 20%;
         text-align: center;
     }
     h1.name{
@@ -88,10 +129,13 @@ div.icons{
         justify-content: center;
         position:relative;
     }
+    .nav-container{
+        display: none;
+    }
 }
 
-@media screen and (max-height: 592px){
+@media screen and (max-height: 612px){
     div.icons{
-        display:none;
+        position:static;
     }
 }
