@@ -1,10 +1,12 @@
 body{
     overflow: hidden;
     scroll-behavior:smooth;
-    background-color:#080e1d;
+    background-color:#220000;
     font-family: 'Roboto', sans-serif;
     color: #adadad;
     font-weight: 450;
+    /* background-image: url(../assests/slanted-gradient.svg); */
+    background-size: 230vh;
 }
 
 span.highlight{

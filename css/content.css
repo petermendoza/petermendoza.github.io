@@ -17,6 +17,8 @@ div.content{
     line-height: 145%;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0%;
+    transition: opacity .2s;
 }
 
 #projects-content{
@@ -24,16 +26,17 @@ div.content{
     margin-top: auto;
     margin-bottom: auto;
     position: absolute;
-    display:none;
+    opacity: 0%;
     width:50%;
+    transition: opacity .2s;
 
 }
 
 #experience-content{
     margin-left: 5%;
-
     position: absolute;
-    display: none;
+    opacity: 0%;
     width:50%;
+    transition: opacity .2s;
 
 }
