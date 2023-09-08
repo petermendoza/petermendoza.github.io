@@ -15,7 +15,6 @@
 </head>
 
 <body>
-  <div class="main-grid">
     <div class="about">
       <div class="main-left">
         <div class="summary">
@@ -25,19 +24,20 @@
           </h3>
           <p class="summary">
             Pursuing a major in Computer Science and a
-            <br class="desktop-break" />minor in Mathematics.
+            <br class="desktop-break" />minor in Mathematics. (Website work in progress)
           </p>
           <div class="nav-container">
-            <div class="nav-div">
-              <h3 class="nav-lines" id="about-nav">ABOUT</h3>
+            <div class="nav-div" id="about-nav-div">
+              <div class="nav-tick" id="about-tick"></div>
+              <h3 class="nav-lines" id="about-nav" onclick="changeActive('about-tick', 'about-nav')">ABOUT</h3>
             </div>
-            <br>
-            <div class="nav-div">
-              <h3 class="nav-lines" id="projects-nav">PROJECTS</h3>
+            <div class="nav-div" id="projects-nav-div">
+              <div class="nav-tick" id="projects-tick"></div>
+              <h3 class="nav-lines" id="projects-nav" onclick="changeActive('projects-tick', 'projects-nav')">PROJECTS</h3>
             </div>
-            <br>
-            <div class="nav-div">
-              <h3 class="nav-lines" id="experience-nav">EXPERIENCE</h3>              
+            <div class="nav-div" id="experience-nav-div">
+              <div class="nav-tick" id="experience-tick"></div>
+              <h3 class="nav-lines" id="experience-nav" onclick="changeActive('experience-tick', 'experience-nav')">EXPERIENCE</h3>              
             </div>
           </div>
         </div>
@@ -50,16 +50,33 @@
       </div>
     </div>
     <div class="content">
-    	<div class="about-container">
-				<div class="about-content">
-					<p>test test test</p>
+				<div id="about-content">
+					<p>Hey there, I'm Peter, a passionate Computer Science major currently pursuing my education at the
+            University of Houston! I've loved technology and problem-solving ever since I was a kid, and I'm
+            always eager to explore the ever-evolving world of computer science.
+          </p>
+          <p>
+            When I'm not immersed with coding, you'll often find me indulging in my favorite hobbies. I've loved
+            video games ever since I was 5 years old, playing on consoles (PS2, Wii, GameCube) and eventually
+            switched to PC games when I was 10, playing games like Minecraft and League of Legends (I still play
+            them to this day). I've been obsessed with all things computer-related since then, even building my own
+            computer and keyboard!
+          </p>
+          <p>
+            Outside the digital realm, I'm a fitness enthusiast who enjoys the rush of a good workout, lifting
+            heavy iron circles over and over again.. For an adrenaline kick, I recently started to boulder
+            and top rope climb, which constantly pushes me to overcome new heights. Sports is also integrated
+            into my lifestyle, playing mostly volleyball, ping pong, and tennis.
+          </p>
+          <p>
+            Thanks for looking at my page, and heres my <a href="assests/PeterMendozaResume9-7-2023.pdf" style="color:#cdd5f1; cursor:pointer; text-decoration: underline;">resume</a> if you're interested!
+          </p>
 				</div>
-    	</div>
-      <div class="projects-container">
-        <div class="projects-content">
+        <div id="projects-content">
           <p>test test 123</p>
         </div>
-      </div>
+        <div id="experience-content">
+          <p>test 123 123</p>
+        </div>
     </div>
-  </div>
 </body>

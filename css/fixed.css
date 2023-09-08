@@ -3,14 +3,24 @@ body{
     scroll-behavior:smooth;
     background-color:#080e1d;
     font-family: 'Roboto', sans-serif;
-    color: #cdd5f1;
-
+    color: #adadad;
+    font-weight: 450;
 }
 
-div.main-grid{
+span.highlight{
+    color: #cdd5f1
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: inherit;
+  }
+
+/* div.main-grid{
     display:grid;
     grid-template-columns: 50% 50%;
-}
+} */
 
 
 @media screen and (max-width:1050px){

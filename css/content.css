@@ -1,32 +1,39 @@
 div.content{
+    float:right;
+    width:50%;
+    height: 100vh;
+    /* border: pink solid; */
     position: relative;
+    justify-content: center;
 }
 
 
-div.about-container{
-    height: 100vh;
-    border: pink solid;
-    position:absolute;
+
+#about-content{
+    margin-left: 5%;
+    /* border: aqua solid; */
+    position: absolute;
+    width:45%;
+    line-height: 145%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-div.about-content{
-    margin-top: 40vh;
-    border: aqua solid;
-}
-
-div.projects-container{
-    height: 100vh;
-    border: aqua solid;
-}
-
-div.projects-content{
+#projects-content{
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    display:none;
+    width:50%;
 
 }
-div.experience-container{
-    height: 100vh;
-    border: pink solid;
-}
 
-div.experience-content{
+#experience-content{
+    margin-left: 5%;
+
+    position: absolute;
+    display: none;
+    width:50%;
 
 }
