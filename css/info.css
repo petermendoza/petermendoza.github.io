@@ -23,14 +23,12 @@ div.summary {
     
 h1.name {
     color:#cdd5f1;
-    font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
     margin-bottom: 0;
 }
 
-h3.status{
+.status{
     color:#cdd5f1;
-    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 450;
 }
@@ -95,13 +93,15 @@ div.nav-tick{
     }
     div.main-left{
         display: flex;
+        height: 20em;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
         float: none;
+        flex-basis: 1;
     }
     p.summary{
-        padding-bottom:0px;
+        padding-bottom:0vh;
     }
 
     div.summary{
@@ -109,7 +109,7 @@ div.nav-tick{
         float:none;
         justify-content: center;
         text-align: center;
-        height: 40vh;
+        padding-top: 3em;
     }
     h1.name{
         word-wrap: break-word;
@@ -131,15 +131,16 @@ div.nav-tick{
     div.icons{
         justify-content: center;
         position:static;
-        top: 0vh;
+        top: 15em;
+        height:2em;
+        flex:1;
     }
     .nav-container{
         display: none;
     }
 }
-
-@media screen and (max-height: 612px){
+@media screen and (max-height:620px){
     div.icons{
-        position:static;
+        position: static;
     }
 }

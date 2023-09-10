@@ -21,15 +21,64 @@ div.content{
     transition: opacity .2s;
 }
 
+
+
 #projects-content{
     margin-left: 5%;
-    margin-top: auto;
-    margin-bottom: auto;
+    top:50%;
+    width:70%;
+    transform: translateY(-50%);
     position: absolute;
     opacity: 0%;
-    width:50%;
-    transition: opacity .2s;
 
+    transition: opacity .2s;
+    /* border: 1px pink solid; */
+
+}
+
+.projects-container
+{
+    padding-left:1.5em;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color:#b1b1b12b;
+    width: 75%;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.projects-name{
+    flex-basis: 100%;
+    color:#cdd5f1;
+    font-size: 1.25em;
+    font-weight: 450;
+}
+
+.projects-text{
+    font-size: .8em;
+    width:90%;
+    margin-bottom: 0;
+}
+
+.tag{
+    border: 2px solid aqua;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.345);
+    padding: .5em;
+    display:inline-block;
+    font-size: .75em;
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.github{
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: rgba(194, 212, 212, 0.345);
+    width: 8em;
+    text-align: center;
+    cursor: pointer;
 }
 
 #experience-content{
@@ -38,5 +87,10 @@ div.content{
     opacity: 0%;
     width:50%;
     transition: opacity .2s;
+    border: pink solid;
+
+}
+
+@media screen and (max-width:1050px){
 
 }
