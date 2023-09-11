@@ -21,8 +21,6 @@ div.content{
     transition: opacity .2s;
 }
 
-
-
 #projects-content{
     margin-left: 5%;
     top:50%;
@@ -42,7 +40,7 @@ div.content{
     border: 2px solid gray;
     border-radius: 10px;
     background-color:#b1b1b12b;
-    width: 75%;
+    width: 28.2em;
     padding-bottom: 1em;
     margin-bottom: 1em;
 }
