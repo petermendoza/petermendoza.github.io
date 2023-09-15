@@ -19,6 +19,7 @@ div.content{
     transform: translateY(-50%);
     opacity: 0%;
     transition: opacity .2s;
+    display:none;
 }
 
 #projects-content{
@@ -28,6 +29,7 @@ div.content{
     transform: translateY(-50%);
     position: absolute;
     opacity: 0%;
+    display:none;
 
     transition: opacity .2s;
     /* border: 1px pink solid; */
@@ -85,8 +87,30 @@ div.content{
     opacity: 0%;
     width:50%;
     transition: opacity .2s;
-    border: pink solid;
+    top:50%;
+    transform: translateY(-50%);
+    line-height: 145%;
+    display:none;
 
+    /* border: pink solid; */
+
+}
+
+#portrait-content{
+    margin-left: 5%;
+    position: absolute;
+    display:block;
+    opacity: 100%;
+    width:50%;
+    transition: opacity .2s;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.portrait-img{
+    margin-left:20%;
+    border-radius: 50%;
+    width:75%;
 }
 
 @media screen and (max-width:1050px){
