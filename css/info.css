@@ -91,7 +91,7 @@ div.nav-tick{
         float: none;
         width: 100%;
         height: auto;
-        border: pink solid;
+        /* border: pink solid; */
 
     }
     div.main-left{
@@ -102,7 +102,7 @@ div.nav-tick{
         text-align: center;
         float: none;
         flex-basis: 1;
-        border: pink solid
+        /* border: pink solid */
     }
     p.summary{
         padding-bottom:0vh;
@@ -147,5 +147,21 @@ div.nav-tick{
 @media screen and (max-height:620px){
     div.icons{
         position: static;
+    }
+}
+
+@media screen and (max-width: 600px){
+    div.icons{
+        width:90%;
+        margin-left:5%;
+    }
+    h1.name{
+    }
+    div.about{
+        margin-bottom: 10em;
+    }
+    .icon{
+        padding-left: 1%;
+        padding-right: 1%;
     }
 }

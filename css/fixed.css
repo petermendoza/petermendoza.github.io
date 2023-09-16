@@ -31,8 +31,6 @@ a {
         overflow-x:hidden;
         scroll-behavior:auto;
     }
-    div.main-grid{
-        grid-template-columns: auto;
-    }
+
 }
 
