@@ -90,6 +90,9 @@ div.nav-tick{
         text-align: center;
         float: none;
         width: 100%;
+        height: auto;
+        border: pink solid;
+
     }
     div.main-left{
         display: flex;
@@ -99,6 +102,7 @@ div.nav-tick{
         text-align: center;
         float: none;
         flex-basis: 1;
+        border: pink solid
     }
     p.summary{
         padding-bottom:0vh;
@@ -115,6 +119,7 @@ div.nav-tick{
         word-wrap: break-word;
         line-height: normal;
         font-weight:900;
+        font-size: 2em;
     }
     h3.status{
         font-size:1em;
